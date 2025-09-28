@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./css/Blogs.css";
 
 const Blog = () => {
-  const BLOG_URL = "https://blog.prabhat.info.np";
+  const BLOG_URL = "https://blog.someshwarudrakshya.coop.np";
   const POSTS_TO_SHOW = 3;
   const EXCERPT_LENGTH = 150;
 
@@ -85,7 +85,10 @@ const Blog = () => {
           Discover our latest insights and stories, beautifully curated for you.
         </p>
         <div className="posts-grid" id="blog-posts">
-          <div className="loading">Please be patient, the latest news & highlights are loading in a minute.</div>
+          <div className="loading">
+            Please be patient, the latest news & highlights are loading in a
+            minute.
+          </div>
         </div>
       </div>
     </section>

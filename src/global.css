@@ -14,6 +14,7 @@
   --dark-color: #0b1429;
   --text-color: #1b1f27;
   --text-muted: #6b7280;
+  --gold-text: #f39c12;
 
   /* Fluid Spacing scale (based on viewport width) */
   --space-fluid-min: 0.25rem;

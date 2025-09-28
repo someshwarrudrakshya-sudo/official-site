@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
+
 import Home from "./pages/Homepage";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
@@ -28,6 +29,13 @@ import Saving from "./pages/services/Saving";
 import Loan from "./pages/services/Loan";
 import Required from "./pages/services/Required";
 
+// Footer-only pages
+import Benefits from "./membership/Benefits";
+import Join from "./membership/Join";
+import Resources from "./membership/Resources";
+import Training from "./membership/Training";
+import SuccessStories from "./membership/SuccessStories";
+
 export default function App() {
   return (
     <main>
@@ -35,6 +43,7 @@ export default function App() {
       <Navbar />
       <PageScroll />
       <Sidebar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -55,6 +64,13 @@ export default function App() {
 
         <Route path="/nepalwidgets" element={<NepalWidget />} />
         <Route path="/emicalculator" element={<EmiCalculator />} />
+
+        {/* Footer pages */}
+        <Route path="/benefits" element={<Benefits />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/training" element={<Training />} />
+        <Route path="/success-stories" element={<SuccessStories />} />
       </Routes>
       <div className="section-divider"></div>
       <Footer />

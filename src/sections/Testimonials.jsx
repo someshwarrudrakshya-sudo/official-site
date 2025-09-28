@@ -1,3 +1,4 @@
+// Testimonials.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -15,11 +16,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      quote: `म स्थापना देखिकै सदस्य हुँ।
-यो सहकारी हरेक सेवामा भरपर्दो छ।
-स्टाफको सहयोग सधैं सकारात्मक हुन्छ।
-मलाई कहिल्यै निराश पारेको छैन।
-धन्यवाद उत्कृष्ट सेवाका लागि!`,
+      quote: `म स्थापना देखिकै सदस्य हुँ। यो सहकारी हरेक सेवामा भरपर्दो छ। स्टाफको सहयोग सधैं सकारात्मक हुन्छ। मलाई कहिल्यै निराश पारेको छैन। धन्यवाद उत्कृष्ट सेवाका लागि!`,
       name: "रिता मगर",
       title: "होटल व्यवसायी",
       image: Rita,
@@ -27,23 +24,15 @@ export default function Testimonials() {
     },
     {
       id: 2,
-      quote: `पहिलो भेटमै राम्रो अनुभव भयो।
-हामीले तुरुन्तै सेवामा विश्वास गर्यौं।
-टिमले बढी प्रयास गरेर साथ दिन्छ।
-प्रत्येक कुरा ध्यानपूर्वक गरिन्छ।
-धन्यवाद अद्भुत सेवाको लागि!`,
+      quote: `पहिलो भेटमै राम्रो अनुभव भयो। हामीले तुरुन्तै सेवामा विश्वास गर्यौं। टिमले बढी प्रयास गरेर साथ दिन्छ। प्रत्येक कुरा ध्यानपूर्वक गरिन्छ। धन्यवाद अद्भुत सेवाको लागि!`,
       name: "मोति राम चौधरी",
       title: "हटिया व्यवसायी",
       image: Moti,
-      rating: 4.5,
+      rating: 4,
     },
     {
       id: 3,
-      quote: `I had high expectations.
-This SACCOS exceeded them all.
-Service was smooth and caring.
-I felt valued every moment.
-I now recommend it to everyone!`,
+      quote: `I had high expectations. This SACCOS exceeded them all. Service was smooth and caring. I felt valued every moment. I now recommend it to everyone!`,
       name: "Bishal Shrestha",
       title: "स्थानीय बुद्दिजीवी",
       image: Bishal,
@@ -80,7 +69,6 @@ I now recommend it to everyone!`,
                 <p>“{t.quote}”</p>
               </blockquote>
 
-              {/* renamed footer */}
               <div className="testimonial-footer">
                 <div className="member-image">
                   <img src={t.image} alt={t.name} />
@@ -88,9 +76,15 @@ I now recommend it to everyone!`,
                 <div className="member-info">
                   <div className="name">{t.name}</div>
                   <div className="title">{t.title}</div>
-                  <div className="rating">
-                    {"★".repeat(Math.floor(t.rating))}
-                    {t.rating % 1 ? "☆" : ""}
+                  <div className="stars">
+                    {Array.from({ length: 5 }, (_, i) => (
+                      <span
+                        key={i}
+                        className={i < t.rating ? "star filled" : "star"}
+                      >
+                        ★
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

@@ -1,45 +1,42 @@
-/* Testimonial Section */
 .testimonial-swiper {
   padding: var(--space-4) var(--space-8);
 }
 
 .testimonial-card {
-  flex: 0 0 85%;
+  background: var(--background);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-  border: 2px solid rgba(126, 154, 253, 0.4);
-  border-bottom: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
-  border-bottom: 2px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+blockquote {
+  font-size: var(--step-0);
+  color: var(--text-color);
+  line-height: 1.7;
+  white-space: pre-line;
+  margin-bottom: var(--space-4);
+  width: 100%;
 }
 
 .testimonial-card p {
-  font-size: var(--step-0);
-  line-height: 1.6;
-  color: var(--text-color);
-  margin-bottom: var(--space-2);
+  width: 100%;
+  display: block;
+  text-align: justify;
+  margin: 0;
 }
 
-/* Quote */
-blockquote {
-  font-size: var(--step-1);
-  color: var(--text-color);
-  margin-bottom: var(--space-4);
-  line-height: 1.8;
-  white-space: pre-line;
-}
-
-/* ✅ Changed footer */
 .testimonial-footer {
   display: flex;
   align-items: center;
@@ -47,8 +44,8 @@ blockquote {
 }
 
 .member-image img {
-  width: clamp(50px, 6vw, 70px);
-  height: clamp(50px, 6vw, 70px);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 3px solid var(--primary-color);
   object-fit: cover;
@@ -63,45 +60,19 @@ blockquote {
 .member-info .title {
   font-size: var(--step--1);
   color: var(--text-muted);
-  margin-top: var(--space-1);
+  margin-top: 2px;
 }
 
-.rating {
-  color: var(--secondary-color);
-  font-size: var(--step-0);
-  margin-top: var(--space-1);
+.stars {
+  margin-top: 4px;
 }
 
-/* Navigation Arrows */
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--light-color);
-  background: var(--primary-color);
-  border-radius: 50%;
-  width: clamp(35px, 5vw, 45px);
-  height: clamp(35px, 5vw, 45px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-sm);
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: var(--secondary-color);
-  transform: scale(1.05);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.star {
   font-size: 1rem;
-  font-weight: bold;
+  color: #ccc;
 }
 
-@media (min-width: 768px) {
-  .testimonial-card {
-    flex: 0 0 40%;
-  }
+.star.filled {
+  color: var(--gold-color);
+  /* gold star */
 }

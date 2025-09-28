@@ -63,22 +63,30 @@ export default function Footer() {
 
           {/* Membership */}
           <div className="footer-col">
-            <h4>Membership</h4>
+            <h4>Useful Link</h4>
             <ul>
               <li>
-                <Link to="/membership/benefits">Benefits</Link>
+                <Link url="https://www.nefscun.org.np/">
+                  नेफ्स्कुन (NEFSCUM)
+                </Link>
               </li>
               <li>
-                <Link to="/membership/how-to-join">How to Join</Link>
+                <Link url="https://ncfnepal.com.np/">
+                  राष्ट्रिय सहकरी बैंक (NCBL)
+                </Link>
               </li>
               <li>
-                <Link to="/membership/farmer-resources">Farmer Resources</Link>
+                <Link url="https://www.deoc.gov.np/">सहकारी विभाग</Link>
               </li>
               <li>
-                <Link to="/membership/training">Training Programs</Link>
+                <Link url="https://www.ncra.gov.np/">
+                  राष्ट्रिय सहकारी नियमन प्राधिकरण
+                </Link>
               </li>
               <li>
-                <Link to="/membership/success-stories">Success Stories</Link>
+                <Link url="https://goaml.fiu.nrb.org.np/PRD/Home">
+                  सम्पती सुद्दिकरण (goAML)
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,7 +112,7 @@ export default function Footer() {
         <div className="copyright">
           <p>
             &copy; 2023 - {currentYear} Someshwar Rudrakshya Saving & Credit
-            Cooperative Ltd. | Developed by{" "}
+            Cooperative Ltd. All Rights Reserved. | Developed by{" "}
             <a
               href="https://prabhat.info.np"
               target="_blank"

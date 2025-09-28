@@ -4,14 +4,14 @@ import "./css/FAQs.css";
 export default function Faqs() {
   const faqData = [
     {
-      question: "What is a cooperative?",
+      question: "What is a Someshwar Rudrakshya?",
       answer:
-        "A cooperative is a member-owned and democratically controlled enterprise that operates for the benefit of its members. Unlike traditional companies, cooperatives follow seven internationally recognized principles that emphasize democratic control, member economic participation, and concern for community.",
+        "Someshwar Rudrakshya cooperative is a member-owned and democratically controlled cooperative that operates for the benefit of its members. Unlike traditional companies, cooperatives follow seven internationally recognized principles that emphasize democratic control, member economic participation and concern for community.",
     },
     {
       question: "How do I become a member?",
       answer:
-        "To become a member, you simply need to complete a membership application, pay a small membership share (typically ₹500-1000), and maintain a small balance in your share account. There are no credit checks or income requirements.",
+        "To become a member, you simply need to complete a membership application, pay a small membership share and maintain a small balance in your share account. There are no credit checks or income requirements.",
     },
     {
       question: "What are membership benefits?",
