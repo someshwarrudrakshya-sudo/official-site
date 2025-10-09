@@ -38,7 +38,7 @@ export default function Sidebar() {
     },
     {
       text: "Visit our page",
-      href: "https://www.facebook.com/someshwarofficial",
+      href: "https://www.facebook.com/someshwar.rudrakhya/",
       icon: <FaFacebookF />,
       className: "facebook",
       target: "_blank",

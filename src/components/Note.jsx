@@ -28,6 +28,10 @@ const notes = {
   Gallery: `Browse through our collection of photos from events and activities. <br/><strong>Note:</strong> For detailed terms, conditions, and required documents, please contact your nearest branch.`,
 
   AccountingSupervisoryCommittee: `Information about the committee responsible for financial oversight and governance. <br/><strong>Note:</strong> For detailed terms, conditions, and required documents, please contact your nearest branch.`,
+
+  EasyWithdrawals: `We prioritize our members’ convenience by offering simple and hassle-free withdrawal services to ensure quick access to your funds. <br/><strong>Note:</strong> For detailed terms, conditions, and required documents, please contact your nearest branch.`,
+
+  FastProcessing: `We value your time and efficiency, providing quick and smooth processing of financial services for our members. <br/><strong>Note:</strong> For detailed terms, conditions, and required documents, please contact your nearest branch.`,
 };
 
 export default function Note({ type }) {

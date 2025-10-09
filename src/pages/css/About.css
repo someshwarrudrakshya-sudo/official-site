@@ -5,7 +5,7 @@
   margin-bottom: var(--space-3);
 }
 
-.history-title .highlight {
+.history-title {
   color: var(--accent-color);
 }
 

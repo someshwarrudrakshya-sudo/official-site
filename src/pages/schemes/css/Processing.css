@@ -1,0 +1,44 @@
+/* Sections */
+.processing-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-4);
+    margin-bottom: var(--space-8);
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.processing-section:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Text */
+.section-text {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: var(--space-3);
+}
+
+/* Lists */
+.section-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-list li {
+    position: relative;
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-2);
+    color: var(--text-color);
+}
+
+.section-list li::before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}

@@ -44,13 +44,13 @@ export default function Footer() {
             <h4>Our Schemes</h4>
             <ul>
               <li>
-                <Link to="/schemes/savings">Savings Accounts</Link>
+                <Link to="services/saving">Savings Accounts</Link>
               </li>
               <li>
-                <Link to="/schemes/loans">Affordable Loans</Link>
+                <Link to="services/loan">Affordable Loans</Link>
               </li>
               <li>
-                <Link to="/schemes/daily-savings">Daily Savings</Link>
+                <Link to="services/required">Required Documents</Link>
               </li>
               <li>
                 <Link to="/schemes/withdrawals">Easy Withdrawals</Link>
@@ -66,28 +66,60 @@ export default function Footer() {
             <h4>Useful Link</h4>
             <ul>
               <li>
-                <Link url="https://www.nefscun.org.np/">
-                  नेफ्स्कुन (NEFSCUM)
-                </Link>
+                <a
+                  href="https://www.nefscun.org.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  नेफ्स्कुन (NEFSCUN)
+                </a>
               </li>
               <li>
-                <Link url="https://ncfnepal.com.np/">
+                <a
+                  href="https://ncfnepal.com.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   राष्ट्रिय सहकरी बैंक (NCBL)
-                </Link>
+                </a>
               </li>
               <li>
-                <Link url="https://www.deoc.gov.np/">सहकारी विभाग</Link>
+                <a
+                  href="https://www.deoc.gov.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  सहकारी विभाग
+                </a>
               </li>
               <li>
-                <Link url="https://www.ncra.gov.np/">
+                <a
+                  href="https://www.ncra.gov.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   राष्ट्रिय सहकारी नियमन प्राधिकरण
-                </Link>
+                </a>
               </li>
               <li>
-                <Link url="https://goaml.fiu.nrb.org.np/PRD/Home">
+                <a
+                  href="https://goaml.fiu.nrb.org.np/PRD/Home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   सम्पती सुद्दिकरण (goAML)
-                </Link>
+                </a>
               </li>
+              <li>
+                <a
+                  href="https://www.nrb.org.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  नेपाल राष्ट बैंक (NRB)
+                </a>
+              </li>
+
             </ul>
           </div>
 

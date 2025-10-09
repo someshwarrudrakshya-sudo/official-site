@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./css/ScrollingText.css";
 
 export default function ScrollingText() {
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    fetch("/greeting.txt")
+      .then((res) => res.text())
+      .then((data) => setText(data))
+      .catch((err) => console.error("Error loading greeting:", err));
+  }, []);
+
   return (
     <div className="scroll-container news-ticker">
-      <span className="ticker-label">स्वागत:</span>
+      <span className="ticker-label">सन्देश:</span>
       <div className="ticker-wrapper">
         <div className="ticker-content">
-        प्रिय सदस्यज्यूहरू, बडादशैँ २०८२ को पावन अवसरमा तपाई र तपाईका परिवारजनमा सुख, शान्ति, स्वास्थ्य र समृद्धिको हार्दिक शुभकामना व्यक्त गर्दछौं । हामी सधैं तपाईंको साथ, विश्वास र सहकार्यका लागि आभारी छौं । धन्यवाद ।
+          {text}
         </div>
       </div>
     </div>

@@ -91,6 +91,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -99,18 +100,14 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-title h2 {
-    font-size: 1.8rem;
-  }
+
   .download-card {
     padding: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .section-title h2 {
-    font-size: 1.5rem;
-  }
+
   .file-icon {
     font-size: 2rem;
     padding: 0.8rem;
