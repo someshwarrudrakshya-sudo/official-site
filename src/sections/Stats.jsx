@@ -10,9 +10,9 @@ import "./css/Stats.css";
 export default function Stats() {
   const data = [
     { number: 2021, label: "Established in", icon: <FaHandshake /> },
-    { number: 2327, label: "Member-Owners", icon: <FaUsers /> },
-    { number: 207, label: "Affordable Loans", icon: <FaMoneyBillWave /> },
-    { number: 2, label: "Districts", icon: <FaMapMarkerAlt /> },
+    { number: 2327, label: "Our Members", icon: <FaUsers /> },
+    { number: 207, label: "Affordable Loans Issued", icon: <FaMoneyBillWave /> },
+    { number: 2, label: "Location", icon: <FaMapMarkerAlt /> },
   ];
 
   return (

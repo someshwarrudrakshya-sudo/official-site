@@ -36,7 +36,7 @@ const files = [
     type: "PDF",
     icon: <FaFilePdf className="file-icon pdf" />,
     size: "450 KB",
-    url: "./public/download/6- Loan Apply Form.pdf",
+    url: "./public/download/6-Loan Apply Form.pdf",
   },
   {
     name: "KYM",
