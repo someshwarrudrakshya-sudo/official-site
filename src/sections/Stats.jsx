@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   FaUsers,
-  FaHandshake,
+  FaAward,
   FaMoneyBillWave,
   FaMapMarkerAlt,
 } from "react-icons/fa";
@@ -9,10 +9,10 @@ import "./css/Stats.css";
 
 export default function Stats() {
   const data = [
-    { number: 2021, label: "Established in", icon: <FaHandshake /> },
-    { number: 2327, label: "Our Members", icon: <FaUsers /> },
-    { number: 207, label: "Affordable Loans Issued", icon: <FaMoneyBillWave /> },
-    { number: 2, label: "Location", icon: <FaMapMarkerAlt /> },
+    { number: 5, label: "Happy Anniversary", icon: <FaAward /> },
+    { number: 2327, label: "Our Active Members", icon: <FaUsers /> },
+    { number: 207, label: "Loan Issued", icon: <FaMoneyBillWave /> },
+    { number: 1, label: "Location", icon: <FaMapMarkerAlt /> },
   ];
 
   return (
@@ -36,7 +36,7 @@ function AnimatedNumber({ value }) {
 
   useEffect(() => {
     let start = 0;
-    const duration = 1500; // 1.5s
+    const duration = 2000; // 2s
     const increment = value / (duration / 16);
 
     const animate = () => {
