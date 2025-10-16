@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/CTA.css";
 
 export default function CTA() {
@@ -12,12 +13,12 @@ export default function CTA() {
             </p>
           </div>
           <div className="cta-buttons">
-            <a className="btn btn-primary" href="/download">
+            <Link to="/download" className="btn btn-primary">
               Download Forms
-            </a>
-            <a className="btn btn-secondary" href="/contact">
+            </Link>
+            <Link to="/contact" className="btn btn-secondary">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

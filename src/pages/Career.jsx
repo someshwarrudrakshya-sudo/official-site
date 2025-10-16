@@ -6,7 +6,7 @@ export default function Career() {
   const job = {
     title: "Marketing Staff",
     location: "Ramdhuni and Itahari Municipality, Koshi Province, Nepal",
-    type: "Full-Time",
+    type: "Haft and Full-Time",
     salary: "Negotiable",
     description:
       "We are seeking a motivated and dynamic Marketing Staff to join our cooperative team. The role involves promoting our financial services, engaging with members, and supporting the cooperative’s growth through innovative marketing strategies.",
@@ -87,7 +87,10 @@ export default function Career() {
             Interested candidates are requested to send their CV and cover
             letter to:
           </p>
-          <a href="mailto:hr@yourcoop.org" className="apply-btn">
+          <a href="https://forms.gle/91bq68NDySa7sLrt7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="apply-btn">
             Apply Now
           </a>
         </div>
