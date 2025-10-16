@@ -37,14 +37,7 @@ export default function Gallery() {
       event: "Training",
       desc: "Team training and cooperative development seminar.",
     },
-    {
-      id: 5,
-      src: "../src/assets/gallery/5.avif",
-      alt: "Event 5",
-      year: "2022",
-      event: "Seminar",
-      desc: "Financial literacy seminar for students.",
-    },
+
   ];
 
   const [filter, setFilter] = useState("All");

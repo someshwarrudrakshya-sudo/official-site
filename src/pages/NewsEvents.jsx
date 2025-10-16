@@ -7,8 +7,9 @@ export default function NewsAndEvents() {
     <main>
       <Blogs />
       <div className="container">
-        <Events />
+        {/*  <Events /> */}
 
+        {/* Note Section */}
         <Note type="NewsEvents" />
       </div>
     </main>

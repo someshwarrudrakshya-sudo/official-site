@@ -1,4 +1,9 @@
-import { FaShieldAlt, FaBriefcase, FaLandmark } from "react-icons/fa";
+import {
+  FaShieldAlt,
+  FaBriefcase,
+  FaLandmark,
+  FaUserTie,
+} from "react-icons/fa";
 import Note from "../../components/Note.jsx";
 import "./css/Loan.css";
 
@@ -12,14 +17,15 @@ export default function Loan() {
             Loan Facilities <span className="highlight">for Members</span>
           </h2>
           <p>
-            Reliable and secure financial support to meet your personal and
-            business needs.
+            Reliable and secure financial support to meet your personal,
+            business, and professional needs.
           </p>
         </div>
       </div>
 
       {/* Loan Cards */}
       <section className="loan-cards">
+        {/* Secured Loan */}
         <div className="loan-card">
           <div className="icon-wrapper">
             <FaShieldAlt className="loan-icon" />
@@ -34,6 +40,7 @@ export default function Loan() {
           </p>
         </div>
 
+        {/* Business Loan */}
         <div className="loan-card">
           <div className="icon-wrapper">
             <FaBriefcase className="loan-icon" />
@@ -41,12 +48,13 @@ export default function Loan() {
           <h3>Business Loan</h3>
           <p>
             Business Loan is provided based on the member’s savings with a
-            multiplier (2–3x) as collateral. The maximum term is one year (up to
+            multiplier (2–5x) as collateral. The maximum term is one year (up to
             NPR 200,000). Suitable for small businesses to cover capital,
             purchase materials, or expand operations.
           </p>
         </div>
 
+        {/* Collateral Loan */}
         <div className="loan-card">
           <div className="icon-wrapper">
             <FaLandmark className="loan-icon" />
@@ -57,6 +65,23 @@ export default function Loan() {
             such as land or assets. Suitable for business establishment, home
             construction, or capital investment. Property is evaluated by a
             certified third party with competitive rates and transparent terms.
+          </p>
+        </div>
+
+        {/* Personal & Professional Loan */}
+        <div className="loan-card">
+          <div className="icon-wrapper">
+            <FaUserTie className="loan-icon" />
+          </div>
+          <h3>Personal & Professional Loan</h3>
+          <p>
+            Personal & Professional Loan is designed to support both individual
+            and career-related financial needs. Members can access funds for
+            education, medical expenses, family events, skill enhancement,
+            business tools, or professional setup. With minimal documentation,
+            competitive interest rates, and flexible repayment options, this
+            loan empowers members to achieve both personal and professional
+            goals with confidence.
           </p>
         </div>
       </section>

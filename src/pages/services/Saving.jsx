@@ -22,14 +22,10 @@ export default function SavingsOverview() {
     },
     {
       icon: <FaCoins />,
-      title: "Regular Savings Account",
-      desc: "Basic account for daily savings. Minimum balance required, easy deposits and withdrawals. Designed to promote safe savings culture.",
+      title: "Platinum Savings Account",
+      desc: "Premium savings account offering higher interest rates, exclusive benefits, and priority services. Ideal for members seeking secure growth and long-term financial rewards.",
     },
-    {
-      icon: <FaRegMoneyBillAlt />,
-      title: "Special Savings Account ",
-      desc: "Goal-based account for specific objectives. Offers higher interest or bonuses compared to regular savings.",
-    },
+
   ];
 
   const periodicAccounts = [
@@ -58,13 +54,13 @@ export default function SavingsOverview() {
     },
     {
       icon: <FaBox />,
-      title: "Piggy Bank / Khutruk Savings Account",
+      title: "Khutruk Savings Account",
       desc: "Encourages children to save from an early age using colorful piggy banks. Funds later transferred to child savings account.",
     },
     {
       icon: <FaRegCalendarCheck />,
       title: "Daily Savings Account",
-      desc: "Members save regularly (daily/monthly) for a fixed term: 3 months, 6 months, 1 year, 2 years, 3 years, 5 years, 6 years. Provides interest benefits, loan priority, and supports emergency or goal-based savings. Funds returned with interest at maturity.",
+      desc: "Members save regularly (daily/monthly) for a fixed term: 3 months, 6 months, 1 year, 2 years and 3 years. Provides interest benefits, loan priority, and supports emergency or goal-based savings. Funds returned with interest at maturity.",
     },
   ];
 
@@ -79,7 +75,7 @@ export default function SavingsOverview() {
   };
 
   return (
-    <div className="savings-overview-page container">
+    <section className="savings-overview-page container">
       <div className="section-title">
         <h2>
           Savings Facilities <span className="highlight">for Members</span>
@@ -120,6 +116,6 @@ export default function SavingsOverview() {
 
       {/* Note Section */}
       <Note type="Savings" />
-    </div>
+    </section>
   );
 }

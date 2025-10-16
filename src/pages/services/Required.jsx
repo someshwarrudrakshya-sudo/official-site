@@ -20,7 +20,7 @@ export default function RequiredDocs() {
           Docs needed to register as a cooperative member in Nepal:
         </p>
         <ul className="docs-list">
-          <li>One copy of the applicant’s Nepali Citizenship Certificate</li>
+          <li>One copy of the applicant’s Nepali Citizenship Certificate or other government-approved ID.</li>
           <li>Two recent passport-sized photo of the applicant</li>
           <li>
             One copy of proof of current residence (e.g., migration certificate,
@@ -49,7 +49,7 @@ export default function RequiredDocs() {
             joining
           </li>
           <li>One copy of Nepali Citizenship Certificate</li>
-          <li>Four recent passport-sized photographs</li>
+          <li>Four recent passport-sized photo</li>
           <li>
             One copy of proof of permanent residence (e.g., migration
             certificate, electricity bill, water bill, land ownership
@@ -74,7 +74,7 @@ export default function RequiredDocs() {
         </ul>
 
         <h4 className="docs-subtitle">
-          Additional Documents Required for Secured Loans:
+          Additional Documents Required for Collateral Loans (Dhito):
         </h4>
         <ul className="docs-list">
           <li>Original land ownership certificate (लाल पुर्जा)</li>
@@ -82,7 +82,7 @@ export default function RequiredDocs() {
             Approved plot map / computer-generated map / tracing map (नक्सा)
           </li>
           <li>Boundary and land classification details (चार किल्ला)</li>
-          <li>Land revenue (मालपोत) receipt</li>
+          <li>Land revenue receipt (मालपोत)</li>
           <li>Extract from Field Book (उत्रार)</li>
           <li>
             Household details and collateral approval form (if applicable)

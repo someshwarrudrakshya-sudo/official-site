@@ -10,7 +10,7 @@ export default function AccountingSupervisoryCommittee() {
   const members = [
     { name: "Mr. Umesh Bhujel", role: "Coordinator", img: Umesh },
     { name: "Mrs. Rita Magar", role: "Member", img: Rita },
-    { name: "Mr. Pawan Kumar Pajiyar", role: "Member", img: noFace },
+    { name: "Mr. Pawan Pajiyar", role: "Member", img: noFace },
   ];
 
   return (
