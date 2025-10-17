@@ -7,6 +7,7 @@ import ScrollingText from "../layouts/ScrollingText";
 import Utilities from "../sections/Utilities";
 import Services from "../sections/OurSchemes";
 import WhyChoose from "../sections/WhyChoose";
+import OrganizationProfile from "../sections/OrganizationProfile";
 import CTA from "../sections/CTA";
 import FAQs from "../sections/FAQs";
 
@@ -15,7 +16,8 @@ export default function App() {
     <main>
       <Carousel />
       <ScrollingText />
-      <Stats />
+      {/* <Stats>*/}
+      <OrganizationProfile />
       <div className="section-divider"></div>
       <ChairmanShortMessage />
       <Committee />
