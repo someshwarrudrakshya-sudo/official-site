@@ -5,7 +5,7 @@ export default function ScrollingText() {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch("/greeting.txt")
+    fetch("/ScrollingMessage.txt")
       .then((res) => res.text())
       .then((data) => setText(data))
       .catch((err) => console.error("Error loading greeting:", err));
