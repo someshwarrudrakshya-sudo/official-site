@@ -3,8 +3,8 @@ import "./css/Blogs.css";
 
 const Blog = () => {
   const BLOG_URL = "https://blog.someshwarudrakshya.coop.np";
-  const POSTS_TO_SHOW = 3;
-  const EXCERPT_LENGTH = 150;
+  const POSTS_TO_SHOW = 5;
+  const EXCERPT_LENGTH = 100;
 
   useEffect(() => {
     const callbackName = "handleBloggerResponse" + Date.now();
@@ -56,11 +56,10 @@ const Blog = () => {
 
       html += `
         <div class="post-card">
-          ${
-            imageUrl
-              ? `<div class="post-image"><img src="${imageUrl}" alt="${title}" loading="lazy" /></div>`
-              : ""
-          }
+          ${imageUrl
+          ? `<div class="post-image"><img src="${imageUrl}" alt="${title}" loading="lazy" /></div>`
+          : ""
+        }
           <div class="post-content">
             <h3 class="post-title">${title}</h3>
             <p class="post-excerpt">${excerpt}</p>
